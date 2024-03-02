@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HEALTH ARCHIVE</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="archives.css">
+</head>
+<body>
+<!-----------Header/navigation-Area----------->
+<header class="header">
+<nav class="navbar">
+<a href="#"  class="nav-logo">super minds</a>
+<ul class="nav-menu">
+<li class="nav-item">
+<a href="#home" class="nav-link">Home</a>
+</li>
+<li class="nav-item">
+<a href="#about" class="nav-link">About</a>
+</li>
+<li class="nav-item">
+<a href="#discover" class="nav-link">Discoveries</a>
+</li>
+<li class="nav-item">
+<a href="#contact" class="nav-link">Contact</a>
+</li>
+</ul>
+<div class="hamburger">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</div>
+</nav>
+</header>
+<!--Home--Page----Area------->  
+<section id="home">
+<div class="home">
+<h2>Discover The Minds Behind Modern Health Techniques</h2>
+<p>These are the  people who have propelled medicine to what it is wright now.</p>
+<button id="btn"><a href='#discover'>Get Started</a></button>
+</div>
+</section>
+
+<!---------About------->
+<section id="about">
+<h2 id="title">About MySelf</h2>
+<div class="about">
+<div class="img">
+<img src="y.jfif" alt="john">
+</div>
+<div class="about-text">
+<p>Hello, am Otiro John Otieno.I am in an expendition to explore and discover some of the greatest
+minds behind the modern developments and techniques used in medicine.Life itself depends on
+the past to create a better future for every living thing.
+</p>
+</div>
+</div>
+</section>
+
+<section id="discover">
+<h2 id="title">Discovered</h2>
+<div class="discover">
+<div class="card">
+<img src="leeuwenhoek.jfif">
+<h2>Leeuwenhoek</h2>
+<p>Developed the Microscope</p>
+<button id="btn"><a href="lee.html">Read About</a></button>
+</div>
+
+<div class="card">
+<img src="edward.jfif">
+<h2>Edward Jenner</h2>
+<p>Develops Vaccination</p>
+<button id="btn"><a href="ed.html">Read About</a></button>
+</div>
+
+<div class="card">
+<img src="laennec.jfif">
+<h2>Laennec</h2>
+<p>Founder of Stethoscope</p>
+<button id="btn"><a href="la.html">Read About</a></button>
+</div>
+
+<div class="card">
+<img src="mcdowell.jfif">
+<h2>Ephraim McDowell</h2>
+<p>Abdominal Operation</p>
+<button id="btn"><a href="ep.html">Read About</a></button>
+</div>
+
+<div class="card">
+<img src="beaumont.jfif">
+<h2>Beaumont</h2>
+<p>Studies the Stomach</p>
+<button id="btn"><a href="be.html">Read About</a></button>
+</div>
+
+
+<div class="card">
+<img src="reed.jfif">
+<h2>Walter Reed</h2>
+<p>Studies Yellow  Fever</p>
+<button id="btn"><a href="w.html">Read About</a></button>
+</div>
+
+<div class="card">
+<img src="osler.jfif">
+<h2>William Osler</h2>
+<p>Great Teacher of Medicine</p>
+<button id="btn"><a href="o.html">Read About</a></button>
+</div>
+
+</div>
+</section>
+
+<!-----------Cotact--------->
+<section id="contact">
+<h2 id="title">Reach Me</h2>
+<div class="contact">
+
+<div class="contact-box">
+<center>
+<div class="icon"><i class="fa fa-phone"></i></div>
+<p>0798295848</p>
+</center>
+</div>
+
+<div class="contact-box">
+<center>
+<div class="icon"><i class="fa fa-envelope"></i></div>
+<p>johnotiro602@gmail.com</p>
+</center>
+</div>
+
+<div class="contact-box">
+<center>
+<div class="icon"><i class="fa fa-map-marker"></i></div>
+<p>Kenya:Migori&Kisumu</p>
+</center>
+</div>
+
+</div>
+</section>
+
+<!------Footer----->
+<section id="footer">
+<div class="footer">
+<h3>&copy;Copyright 2023</h3>
+<p>Created by <br> OTIRO JOHN OTIENO</p>
+</div>
+</section>
+
+
+
+
+
+<script type="text/javascript">
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+    
+hamburger.addEventListener("click", mobileMenu);
+function mobileMenu() {
+hamburger.classList.toggle("active");
+navMenu.classList.toggle("active");
+}
+const navLink = document.querySelectorAll(".nav-link");
+navLink.addEventListener("click", closeMenu);
+    
+function closeMenu() {
+hamburger.classList.remove("active");
+navMenu.classList.remove("active");
+}
+</script>
+</body>
+</html>
